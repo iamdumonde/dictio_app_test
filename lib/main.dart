@@ -1,7 +1,11 @@
 import 'package:dictio_app_test/home_screen.dart';
 import 'package:flutter/material.dart';
 
-void main() {}
+void main() {
+  // WidgetsFlutterBinding
+  //     .ensureInitialized(); // Assure l'initialisation complète du framework
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

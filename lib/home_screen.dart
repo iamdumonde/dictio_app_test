@@ -5,6 +5,26 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    final TextEditingController _controller = TextEditingController();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Search For Word"),
+        centerTitle: true,
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(20),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Image.asset(
+                "assets/dictionaryapp.png",
+                fit: BoxFit.cover,
+                height: MediaQuery.of(context).size.height / 3.5,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
