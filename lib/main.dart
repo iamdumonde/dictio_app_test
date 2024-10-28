@@ -7,6 +7,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Dictionary App",
+      theme: ThemeData(
+        primarySwatch: Colors.indigo,
+      ),
+      home: HomeScreen(),
+    );
   }
 }
