@@ -1,3 +1,4 @@
+import 'package:dictio_app_test/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {}
