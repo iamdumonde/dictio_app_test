@@ -41,7 +41,9 @@ class HomeScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ResultScreen(),
+                          builder: (context) => ResultScreen(
+                            word: _controller.text,
+                          ),
                         ));
                   },
                   child: Text(
